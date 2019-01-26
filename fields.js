@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Reformat LogDNA fields according to Xorbits Logformat
 // @author       Maximilian Pachl
-// @match        https://app.logdna.com/*/logs/view/*
+// @match        https://app.logdna.com/*/logs/view*
 // @grant        none
 // ==/UserScript==
 
