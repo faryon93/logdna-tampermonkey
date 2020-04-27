@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LogDNA Formater
 // @namespace    https://github.com/faryon93/
-// @version      0.2
+// @version      0.3
 // @description  Reformat LogDNA fields according to Xorbits Logformat
 // @author       Maximilian Pachl
 // @match        https://app.logdna.com/*/logs/view*
@@ -30,7 +30,7 @@ function trace(elem)
         mutations.forEach(function(mutation) {
             if (mutation.target.classList.contains("log-content"))
                 mutation.addedNodes.forEach(logline);
-            else if (mutation.target.classList.contains("log-line-context"))
+            else if (mutation.target.classList.contains("line-context"))
             {
                 let fields = mutation.target.getElementsByClassName("line-field-dt");
                 for (let field of fields)
